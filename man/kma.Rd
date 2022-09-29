@@ -122,8 +122,8 @@ described in Sangalli et al. (2010), with improvements as proposed in Vantini
 }
 \examples{
 res <- kma(
-  simulated30$x,
-  simulated30$y,
+  fdacluster::simulated30$x,
+  fdacluster::simulated30$y,
   seeds = c(1, 21),
   n_clust = 2,
   center_method = "medoid",

@@ -7,6 +7,17 @@
 #' @inherit fdacluster::kma
 #' @export
 #' @importFrom fdacluster kma
+#'
+#' @examples
+#' res <- kma(
+#'   fdacluster::simulated30$x,
+#'   fdacluster::simulated30$y,
+#'   seeds = c(1, 21),
+#'   n_clust = 2,
+#'   center_method = "medoid",
+#'   warping_method = "affine",
+#'   dissimilarity_method = "pearson"
+#' )
 kma <- function(x, y, seeds = NULL, warping_options = c(0.15, 0.15),
                 n_clust = 1, maximum_number_of_iterations = 100,
                 number_of_threads = 1, parallel_method = 0,
