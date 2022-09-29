@@ -35,3 +35,27 @@ You can install the development version of **fdakma** from
 # install.packages("devtools")
 devtools::install_github("astamm/fdakma")
 ```
+
+## Example
+
+```{r}
+library(fdakma)
+
+res <- kma(
+  fdacluster::simulated30$x,
+  fdacluster::simulated30$y,
+  seeds = c(1, 21),
+  n_clust = 2,
+  center_method = "medoid",
+  warping_method = "affine",
+  dissimilarity_method = "pearson"
+)
+```
+
+```{r}
+plot(res, type = "data")
+```
+
+```{r}
+plot(res, type = "warping")
+```
