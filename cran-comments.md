@@ -1,5 +1,5 @@
 ## Test environments
-* local macOS R installation, R 4.2.2
+* local macOS R installation, R 4.3.0
 * continuous integration via GH actions:
   * macOS latest release
   * windows latest release
